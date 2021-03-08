@@ -56,7 +56,7 @@ def luo_tietokanta_ja_taulu(taulun_nimi: str, tietokannan_nimi="NPC.db"):
                 name TEXT NOT NULL UNIQUE, level INTEGER, hits INTEGER, at INTEGER, 
                 db INTEGER, shield TEXT, greaves TEXT, mel_ob INTEGER, msle_ob INTEGER, 
                 mov_m INTEGER , class TEXT, race TEXT, notes TEXT)"""
-        db.execute(sql) # Onko injektio estetty?
+        db.execute(sql) # Injektiot estetty?
     except:
         print(f"Taulun luominen epäonnistui: {taulun_nimi}")        
 
