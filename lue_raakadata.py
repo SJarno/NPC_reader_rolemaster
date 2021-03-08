@@ -31,7 +31,6 @@ def lue_csv_tietokantaan(tiedostonimi: str, ei_huomioon: list, lokaatiot: list):
         print("Tiedoston lukeminen epäonnistui")
           
 
-
 def luo_yhteys_tietokantaan(tietokannan_nimi="NPC.db"):
     """
     Luodaan tietokantaan yhteys ja palautetaan yhteys-objekti
@@ -42,6 +41,7 @@ def luo_yhteys_tietokantaan(tietokannan_nimi="NPC.db"):
         return db
     except:
         print("Yhteyden luominen tietokantaan epäonnistui")    
+
 
 def luo_tietokanta_ja_taulu(taulun_nimi: str, tietokannan_nimi="NPC.db"):
     """
