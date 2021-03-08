@@ -81,9 +81,10 @@ def lisaa_tietokantaan(lisattavat_tiedot: list, taulun_nimi: str, tietokannan_ni
 if __name__ == "__main__":
     ei_huomioon = ["IN THARBAD", "Name"]
     lokaatiot = [ # Lokaatiot toimii taulun nimenä tietokannassa
-                "Pohjoisranta", "Eteläranta", "Satama", 
+                "Pohjoisranta", "Etelaranta", "Satama", 
                 "Varkaiden kaupunki", "Kuninkaan Katu", 
-                "Rahvaan kaupunginosa", "Kauppiaiden kaupunginosa"
+                "Rahvaan kaupunginosa", "Kauppiaiden kaupunginosa",
                 "Sekalaisia", "Kiristajaliiga", "Rosvot",
                 "Maantierosvot 1410", "Maantierosvot 1640"]
     lue_csv_tietokantaan("raakadata.csv", ei_huomioon, lokaatiot)
+    
