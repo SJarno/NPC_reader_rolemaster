@@ -1,4 +1,5 @@
 # Files to exclude
+#
 *.db
 *.csv
 *.md
