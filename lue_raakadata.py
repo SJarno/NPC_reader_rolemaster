@@ -26,7 +26,7 @@ def lue_csv_tietokantaan(tiedostonimi: str, ei_huomioon: list, lokaatiot: list):
                     lokaatio = rivi[0].replace(" ", "_") # Vaihdetaan välit alaviivaan
                     luo_tietokanta_ja_taulu(lokaatio)
                 if rivi[0] not in lokaatiot:
-                    lisaa_tietokantaan(rivi[0:13], lokaatio) # Ylimääräisiä soluja oteta huomioon                     
+                    lisaa_tietokantaan(rivi[0:13], lokaatio) # Ylimääräisiä soluja ei oteta huomioon                     
     except:
         print("Tiedoston lukeminen epäonnistui")
           
